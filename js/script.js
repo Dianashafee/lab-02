@@ -35,7 +35,7 @@ switch (input1) {
         break
 }
 
-var input2 = prompt('Did i graduated from university of Jordan? ' + userName );
+var input2 = prompt('Did i graduate from university of Jordan? ' + userName );
 var input2 = input2.toLocaleLowerCase()
 switch(input2) {
     case 'yes':
