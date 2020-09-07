@@ -1,4 +1,47 @@
-h1{
+#H1{
     text-align: center;
-    font-size:xx-large;
+    font-size:70px ;
+    font-style: italic;
+    color:black;
+   
 }
+ body{
+     color: beige;
+ }
+
+ #H2{
+     font-style: italic;
+     font-size: 45px;
+     color: blanchedalmond;
+ }
+
+ li.a{
+     font-style: italic;
+     font-weight: bold;
+     text-shadow: rgb(250, 211, 152);
+     text-decoration-style: wavy;
+ }
+
+ h3{
+     font-style: italic;
+     font-size: 35px;
+     text-shadow: cornflowerblue;
+ }
+ p{
+    
+     font-size: 15px;
+ }
+
+
+
+ footer{
+     text-align: center;
+     font-size: 40px;
+     color:wheat; 
+     font-style: italic;
+ }
+ 
+ .a{
+     font-size: 20px;
+     color: rgb(136, 202, 193);
+ }
