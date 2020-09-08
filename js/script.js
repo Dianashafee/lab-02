@@ -1,5 +1,7 @@
 'use strict';
 
+var sum = 0 
+
 var userName = prompt('What is your name?');
 alert(' Welcome to my webpage it is an honor having you here ' + userName);
 // console.log(' Welcome to my webpage it is an honor having you here' + userName);
@@ -12,7 +14,8 @@ switch (input0) {
     case 'y':
         alert('Correct! i have a lot of dreams  '  + userName);
         // console.log( 'Correct! i have a lot of dreams  ' + userName);
-        break
+        sum = sum+1
+        break;
     case 'no':
     case 'n':
         alert(' Wrong answer');
@@ -27,7 +30,8 @@ switch (input1) {
     case 'y':
         alert('Corecct! I am 23');
         // console.log('Corecct! I am 23')
-        break
+        sum = sum+1
+        break;
     case 'no':
     case 'n':
         alert('Incorrect i am 23')
@@ -42,12 +46,13 @@ switch(input2) {
     case 'y':
         alert('Wrong! i graduated from Isra University');
         // console.log('Wrong! i graduated from Isra University')
-        break
+        break;
     case 'no':
     case 'n':
         alert('Correct! i graduated from Isra University');
-        // console.log('Correct! i graduated from Isra University')
-        break
+        // console.log('Correct! i graduated from Isra University');
+        sum = sum+1
+        break;
 }
 
 var input3 = prompt('In your opinion, Do i look Optimistic?  '  + userName);
@@ -56,13 +61,14 @@ switch(input3) {
     case 'yes':
     case 'y':
         alert('Correct !');
-        // console.log('Correct !')
-        break
+        // console.log('Correct !');
+        sum = sum+1
+        break;
     case 'no':
     case 'n':
         alert('Wrong answer! I am very optimistc' );
         // console.log( 'Wrong answer! I am very optimistc')
-        break 
+        break; 
 }
 
 var input4 = prompt('Do you think that i have a strong personality? ' + userName );
@@ -72,7 +78,8 @@ switch(input4) {
     case 'y':
         alert('Correct!, i have a strong personality ' + userName);
         // console.log('Correct!, i have a strong personality ' + userName)
-        break
+        sum = sum+1
+        break;
     case 'no':
     case 'n':
         alert(' Wrong answer ' + userName );
@@ -86,11 +93,56 @@ switch(input5) {
     case 'yes':
     case 'y':
         alert('Correct! i do live in Amman  ' + userName);
-        // console.log('Correct! i do live in Amman  ' + userName)
-        break
+        // console.log('Correct! i do live in Amman  ' + userName);
+        sum = sum+1
+        break;
     case 'no':
     case 'n':
         alert('Wrong answer! i live in Amman ' + userName);
         // console.log('Wrong answer! i live in Amman '+ userName)
-        break 
+        break;
 }
+
+var numAnswer = prompt('can you guess my total grades out of 100 at university ? ');
+numAnswer = Number(numAnswer);
+console.log(numAnswer);
+
+for(var n = 1; n <=3; n++) {
+    if (numAnswer === 92) {
+        alert('Correct!');
+        sum = sum+1
+        break;
+    } else if ( numAnswer > 92) {
+        alert('too hight');
+        var numAnswer = prompt('can you guess my total grades out of 100 at university ? ');
+            numAnswer = Number(numAnswer);
+    } else {
+        alert('too low');
+        var numAnswer = prompt('can you guess my total grades out of 100 at university ? ');
+  numAnswer = Number(numAnswer);
+    }
+}
+
+
+
+
+
+var favPlace = ['france', 'italy', 'spain', 'russia'];
+var userinput = prompt('Can you guess where i wish to travel ?').toLocaleLowerCase();
+
+for(var i= 0; i<=4; i++) {
+    if(userinput === favPlace[0] || userinput === favPlace[1]) {
+        alert('You know me well, Correct!');
+        sum = sum+1
+        break;
+    }else{
+        alert('Wrong answer, try one more time');
+        var userinput = prompt('Can you guess where i wish to travel ?').toLocaleLowerCase();
+
+    }
+
+}
+alert('the possible answer are:' + favPlace[0] + ', ' + favPlace[1]); 
+
+alert(  'I had fun palying with you ' + userName + ' You SCORE is  ' +sum + 'out of 7');
+console.log(sum);
