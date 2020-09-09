@@ -6,7 +6,7 @@ var userName = prompt('What is your name?');
 alert(' Welcome to my webpage it is an honor having you here ' + userName);
 // console.log(' Welcome to my webpage it is an honor having you here' + userName);
 
-
+//  using switch for Yes / no Qs.
 var input0 = prompt('Do you think i am a girl with A BIG dream? ' + userName);
 var input0 = input0.toLowerCase()
 switch (input0) {
@@ -87,6 +87,7 @@ switch(input4) {
         break; 
 }
 
+
 var input5 = prompt('Do i live in Amman  ' + userName );
 var input5 = input5.toLocaleLowerCase()
 switch(input5) {
@@ -103,6 +104,7 @@ switch(input5) {
         break;
 }
 
+//  asking to insert numeric input for a guessing game using "for loop"
 var numAnswer = prompt(' guess my total grades out of 100 at university ? ');
 numAnswer = Number(numAnswer);
 console.log(numAnswer);
@@ -125,7 +127,7 @@ for(var n = 1; n <=3; n++) {
 
 
 
-
+// asking about a question with many possible answers using array. 
 
 var favPlace = ['france', 'italy', 'spain', 'russia'];
 var userinput = prompt(' guess what country do i love the most ?').toLocaleLowerCase();
@@ -144,7 +146,9 @@ for(var i= 0; i<=4; i++) {
     }
 
 }
-alert('the possible answer are:' + favPlace[0] + ', ' + favPlace[1]); 
+// showing the correct answers. 
+alert(' My favourite countries are :' + favPlace[0] + ', ' + favPlace[1]); 
 
-alert(  'I had fun palying with you ' + userName + ' You SCORE is  ' +sum + ' out of 7');
+//  using sum to count the total of the correct answers. 
+alert(  'I had fun palying with you ' + userName + ' Your SCORE is  ' +sum + ' out of 7');
 console.log(sum);
