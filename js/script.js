@@ -121,7 +121,7 @@ for(var n = 1; n <=3; n++) {
     } else {
         alert('too low');
         var numAnswer = prompt(' guess my total grades out of 100 at university ? ');
-  numAnswer = Number(numAnswer);
+            numAnswer = Number(numAnswer);
     }
 }
 
